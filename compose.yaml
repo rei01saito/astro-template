@@ -1,0 +1,9 @@
+services:
+  web:
+    container_name: astro-js-practice-web
+    build: ./.docker/web
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 4321:4321
+    tty: true
